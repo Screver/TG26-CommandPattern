@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f7f5a7e1fc320c46be5e9f1d3678a00, type: 3}
   m_Name: TurnLeft
   m_EditorClassIdentifier: Assembly-CSharp::TurnLeft
+  m_rotation: 90
+  m_angularVelocity: 180

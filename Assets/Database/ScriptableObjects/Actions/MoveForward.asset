@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 556b28730b1c6fe449c276d5da52c8d9, type: 3}
   m_Name: MoveForward
   m_EditorClassIdentifier: Assembly-CSharp::MoveForward
-  m_distance: 1
+  m_distance: 2

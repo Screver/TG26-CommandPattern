@@ -338,7 +338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 155733911}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1290128003}
+        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
+        m_MethodName: TurnRight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &155733911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1027,7 +1039,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 710575391}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1290128003}
+        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
+        m_MethodName: TurnLeft
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &710575391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1593,6 +1617,7 @@ GameObject:
   - component: {fileID: 1290128001}
   - component: {fileID: 1290128000}
   - component: {fileID: 1290127999}
+  - component: {fileID: 1290128003}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1694,6 +1719,21 @@ Transform:
   - {fileID: 1909663966}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1290128003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290127997}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58bf353f1332a284ea2f373d1966cb64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RobotController
+  moveForward: {fileID: 11400000, guid: a455ea364842d854ba0202510c80e629, type: 2}
+  turnLeft: {fileID: 11400000, guid: c4fd08f6e804c4147925e13a71122220, type: 2}
+  turnRight: {fileID: 11400000, guid: 5c7e6fdb4e0f67046a44369fdd3e8bad, type: 2}
 --- !u!1 &1294841789
 GameObject:
   m_ObjectHideFlags: 0
@@ -2463,7 +2503,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1932606756}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1290128003}
+        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
+        m_MethodName: ApplyFunction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1932606756
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2697,7 +2749,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1986315533}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1290128003}
+        m_TargetAssemblyTypeName: RobotController, Assembly-CSharp
+        m_MethodName: MoveForward
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1986315533
 MonoBehaviour:
   m_ObjectHideFlags: 0
