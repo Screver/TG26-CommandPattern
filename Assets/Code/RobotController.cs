@@ -16,9 +16,8 @@ public class RobotController : MonoBehaviour
         while (_instructionsQueue.Count > 0)
         {
             IInstruction _instruction = _instructionsQueue.Dequeue();
-            yield return _instruction.ApplyInstruction(transform, 2f);
+            yield return _instruction.ApplyInstruction(transform, 1f);
         }
-        
     }
 
     public void MoveForward()
@@ -32,7 +31,7 @@ public class RobotController : MonoBehaviour
     }
 
     public void TurnLeft()
-    {
+    {   
         _instructionsQueue.Enqueue(turnLeft);
     }
     

@@ -24,6 +24,7 @@ public class MoveForward : ScriptableObject, IInstruction
     public IEnumerator ApplyInstruction(Transform transform, float timeToWait)
     {
         yield return Move(transform);
+        
         yield return new WaitForSeconds(timeToWait);
     }
 }

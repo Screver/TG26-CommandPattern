@@ -4,14 +4,34 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "TurnRight", menuName = "Scriptable Objects/TurnRight")]
 public class TurnRight : ScriptableObject, IInstruction
 {
-    private void Turn(Transform target)
+    public float m_rotation = 90;
+    public float m_angularVelocity = 180;
+
+    private IEnumerator Turn(Transform target)
     {
-        target.Rotate(Vector3.up, 90);
+        Vector3 initialRotation = target.rotation.eulerAngles;
+        float progress = 0f;
+
+        while (progress < Mathf.Abs(m_rotation))
+        {
+            progress += Time.deltaTime * m_angularVelocity;
+
+            target.rotation = Quaternion.Euler(
+                initialRotation.x,
+                initialRotation.y + 1 * progress,
+                initialRotation.z);
+
+            yield return null;
+        }
+        target.rotation = Quaternion.Euler(
+            initialRotation.x,
+            initialRotation.y + m_rotation,
+            initialRotation.z);
     }
 
     public IEnumerator ApplyInstruction(Transform transform, float timeToWait)
     {
-        Turn(transform);
+        yield return Turn(transform);
 
         yield return new WaitForSeconds(timeToWait);
     }
